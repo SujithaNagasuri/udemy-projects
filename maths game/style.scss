@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&family=Nunito:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+div{
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #E6E6FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content{
+        width: 700px;
+        box-shadow: 0 10px 1rem rgba(0,0,0,0.5);
+        background: #B7CEEC;
+        padding: 2rem;
+        position: relative;
+        %para{
+            width: 6rem;
+            padding: .8rem;
+            box-shadow: 0 10px 1rem rgba(0,0,0,0.5);
+            border-radius: 1rem;
+            text-align: center;
+            
+        }
+
+        .score{
+            background: #46c7c7;
+            color: white;
+            font-weight: 555;
+            float: right;
+            @extend %para;
+            width: 6rem;
+        }
+        #correct{
+            background: green;
+            color: white;
+            position: absolute;
+            right: 20rem;
+            @extend %para;
+            display: none;
+        }
+        #wrong{
+            background: red;
+            color: white;
+            position: absolute;
+            right: 20rem;
+            @extend %para;
+            display: none;
+        }
+        #question{
+            width: 550px;
+            height: 200px;
+            text-align: center;
+            padding: 2rem;
+            background: #E6E6FA;
+           margin: 80px auto 10px auto;
+           box-shadow: 0 10px 1rem rgba(0,0,0,0.5);
+           font-size: 100px;
+        }
+        #instruction{
+            width: 550px;
+            height: 50px;
+            background: #E6E6FA;
+            margin: 10px auto 10px auto;
+            text-align: center;
+            padding: .5rem;
+            box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+        }
+        .answer-box{
+            display: flex;
+            gap: 1rem;
+            width: 550px;
+            height: 100px;
+            align-items: center;
+            margin: 10px auto;
+            justify-content: center;
+            .answer{
+               flex: 1;
+                background: #46c7c7;
+                padding: .5rem;
+                text-align: center;
+                color: white;
+                font-weight: 555;
+               height: 70px;
+               transition: all 0.5s;
+
+               &:hover{
+                background: #E6E6FA;
+                color: black;
+                box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+               }
+            }
+           
+        }
+        #startreset{
+            background: #46c7c7;
+            padding: .5rem;
+            text-align: center;
+            color: white;
+            font-weight: 555;
+           height: 50px;
+           width: 100px;
+           margin: 5px auto;
+           transition: all 0.5s;
+           box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+           border-radius: 1rem;
+            cursor: pointer;
+           &:hover{
+            background: #E6E6FA;
+            color: black;
+            box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+           }
+           position: relative;
+        }
+
+        #timeremain{
+            width: 200px;
+            padding: 10px;
+            background: #3B9C9C;
+            color: white;
+            float: right;
+            position: absolute;
+            right: 1rem;
+            top: 32rem;
+            box-shadow: 0 5px 5px #3EA99F;
+            display: none;
+        }
+
+        #gameover{
+            background: linear-gradient(to bottom,#4C787E,#1B8A6B);
+           z-index: 2;
+            color: white;
+            width: 600px;
+            padding: 3rem;
+            text-align: center;
+            font-size: 3rem;
+            line-height: 5rem;
+            position: absolute;
+            top: 30%;
+            left: 40px;
+            display: none;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
