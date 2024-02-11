@@ -1,0 +1,171 @@
+.body
+{
+	width: 1050px;
+	height: auto;
+	margin: 0 auto;
+}
+.heading
+{
+	height: 100px;
+	padding: 10px 0;
+}
+.title
+{
+	float: left;
+}
+.title h1 a
+{
+	font-size: 40px;
+	font-weight: 100;
+	text-decoration: none;
+    color: #861BBF;
+}
+.searchbox
+{
+	float: right;
+	background: linear-gradient(#E4F289,#B7E953);
+	width: 350px;
+	height: 50px;
+	padding: 20px 20px 0 20px;
+	margin-top: 20px;
+
+}
+.text
+{
+	float: left;
+	width: 200px;
+	border: 1px solid #C8D03E;
+	padding: 5px;
+	font-size: 15px;
+	color: #E36A0C;
+}
+.submit
+{
+	float: right;
+	color: white;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	background: #A751D6;
+	border: 1px solid #A751D6;
+}
+.clear
+{
+	clear: both;
+}
+.menu
+{
+	height: 70px;
+	background: linear-gradient(#F8F594,#D5D533);
+	border: 1px solid #F8F594;
+	padding: 7px 0;
+}
+ul
+{
+	list-style: none;
+}
+.menu ul li
+{
+	float: left;
+	padding: 0 30px;
+	height: 30px;
+	border-right: 1px solid #A751D6;
+}
+.menu ul li a
+{
+	text-decoration: none;
+	color: #A751D6;
+	font-size: 15px;
+	line-height: 30px;
+	text-transform: uppercase;
+	transition: font-size 0.3s ease;
+}
+.menu ul li a:hover,.menu ul li a.active
+{
+	font-size: 20px;
+}
+.menu ul li:last-child
+{
+	border-right: none;
+}
+.box
+{
+	margin-top: 15px;
+	height: 250px;
+	padding: 30px;
+	background-image: linear-gradient(#E4F289,#B7E952);
+	border: 1px solid #E4F289;
+}
+.box h3
+{
+	font-size: 45px;
+	font-weight: normal;
+	color: #316901;
+}
+.box p
+{
+	font-size: 20px;
+	color: #316901;
+	line-height: 25px;
+}
+.sidebar
+{
+	margin-top: 15px;
+	border: 3px solid #BAF46F;
+	height: 500px;
+	width: 450px;
+	border-radius: 15px;
+	padding: 30px;
+}
+#leftsidebar
+{
+	float: left;
+}
+#rightsidebar
+{
+	float: right;
+	line-height: 40px;
+}
+.sidebar h3
+{
+	font-size: 30px;
+	color: #861BBF;
+}
+.sidebar ul li
+{
+	padding: 5px;
+}
+.sidebar ul li a
+{
+	text-decoration: none;
+	color:  #861BBF;
+	font-size: 20px;
+	font-weight: 100px;
+	transition: font-size 0.3s ease;
+}
+.sidebar ul li a:hover ,.sidebar ul li .active
+{
+	font-size: 25px;
+	color: #B314DB;
+	font-weight: bold;
+}
+.fa 
+{
+	padding-right: 20px;
+	color: #316901;
+}
+.clear
+{
+	clear: both;
+}
+.foot
+{
+	margin-top: 15px;
+	height: 80px;
+	border: 1px solid #F8F594;
+	background: linear-gradient(#F8F594,#D5D533);
+}
+.foot p
+{
+	margin-left: 5px;
+}
