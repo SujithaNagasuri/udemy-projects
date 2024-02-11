@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&family=Nunito:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+}
+
+div {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #E6E6FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .content {
+  width: 800px;
+  box-shadow: 0 10px 1rem rgba(0, 0, 0, 0.5);
+  background: #B7CEEC;
+  padding: 2rem;
+  position: relative;
+}
+.container .content #wrong, .container .content #correct, .container .content .score {
+  width: 6rem;
+  padding: 0.8rem;
+  box-shadow: 0 10px 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  text-align: center;
+}
+.container .content .score {
+  background: #3B9C9C;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 555;
+  float: right;
+  width: 6rem;
+}
+.container .content #correct {
+  background: green;
+  color: white;
+  position: absolute;
+  right: 20rem;
+  display: none;
+}
+.container .content #wrong {
+  background: red;
+  color: white;
+  position: absolute;
+  right: 20rem;
+  display: none;
+}
+.container .content #fruitcontainer {
+  width: 650px;
+  height: 400px;
+  text-align: center;
+  padding: 2rem;
+  background: #E6E6FA;
+  margin: 80px auto 10px auto;
+  box-shadow: 0 10px 1rem rgba(0, 0, 0, 0.5);
+  font-size: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.container .content #instruction {
+  width: 650px;
+  height: 50px;
+  background: #3B9C9C;
+  color: white;
+  margin: 10px auto 10px auto;
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.container .content .answer-box {
+  display: flex;
+  gap: 1rem;
+  width: 550px;
+  height: 100px;
+  align-items: center;
+  margin: 10px auto;
+  justify-content: center;
+}
+.container .content .answer-box .answer {
+  flex: 1;
+  background: #46c7c7;
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+  font-weight: 555;
+  height: 70px;
+  transition: all 0.5s;
+}
+.container .content .answer-box .answer:hover {
+  background: #E6E6FA;
+  color: black;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.container .content #startreset {
+  background: #46c7c7;
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+  font-weight: 555;
+  height: 50px;
+  width: 100px;
+  margin: 5px auto;
+  transition: all 0.5s;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+.container .content #startreset:hover {
+  background: #E6E6FA;
+  color: black;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.container .content #trailsleft {
+  width: 140px;
+  padding: 10px;
+  text-align: center;
+  background: #3B9C9C;
+  color: white;
+  position: absolute;
+  top: 2rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  display: none;
+  border-radius: 1rem;
+}
+.container .content #gameover {
+  background: linear-gradient(to bottom, #4C787E, #1B8A6B);
+  z-index: 2;
+  color: white;
+  width: 700px;
+  padding: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 5rem;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  box-shadow: 0 10px 1rem rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.container .content .heart {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+.container .content #fruit {
+  display: none;
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */
