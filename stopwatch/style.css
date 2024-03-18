@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('https://cdn.pixabay.com/photo/2021/07/16/15/29/hellebore-6471156_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 3vw;
+    font-weight: 777;
+}
+
+.time{
+    font-size: 8vw;
+}
+
+.lap{
+    font-size: 3vw;
+}
+.btn{
+    font-size: 2vw;
+}
+#stop,#resume,#reset{
+    display: none;
+}
+#laps{
+    height: 250px;
+    overflow-y: scroll;
+}
+#laps::-webkit-scrollbar{
+    display: none;
+}
+.lapbox{
+    border-bottom: 1px solid white;
+    display: flex;
+    padding-top: 5px;
+    justify-content: space-between;
+    font-size: 2vw;
+}
